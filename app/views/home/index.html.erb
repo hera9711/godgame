@@ -1,0 +1,39 @@
+<div class = "container">
+    <h1>신이 나를 만들때</h1>
+    <div class="row">
+      <% for i in (0..2) %>   
+          <div class="col-md-4"><%= @list_rand[i] %>
+              <% if @list_rand[i] != "으어어어어"%>
+                  을 한스푼
+              <% end %>
+          </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <% for i in (0..2) %> 
+          <div class="col-md-4">
+              <% if @list_rand[i] == "으어어어어" %>
+                 <%= image_tag 6, width: "300" %>
+              <% else %>
+                 <%= image_tag @img_rand[i], width: "300" %>
+              <% end %>
+          </div>
+      <% end %>
+    </div>
+    <a href = "/gg" > 다음페이지로 </a>
+</div>
+<!--
+      #그림하고 글씨를 위치에 맞게 하는 방법
+      #똑같은 코드를 동일하게 사용할 때는 for를 사용
+      #특정 사진에 특정 메시지가 나오게 하는 방법 -->
+      
+
+
+
+
+
+
+
+
+
+
